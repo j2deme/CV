@@ -1,0 +1,139 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[orange]{casual}
+
+% character encoding
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage{hyperref}
+\usepackage[pdftex]{xcolor}
+%\DefineNamedColor{named}{RoyalPurple}{cmyk}{0.75,0.90,0,0}
+\definecolor{RoyalBlue}{cmyk}{1,0.50,0,0}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Jaime Jes\'us}
+\familyname{\\Delgado Meraz}
+\title{Bachelor Degree in Computer Science}               % optional, remove the line if not wanted
+\address{Calle Maguey \#2171}{Col. Cuauht\'emoc CP. 87060 Ciudad Victoria, Tamps.}    % optional, remove the line if not wanted
+\mobile{4811077618}                    % optional, remove the line if not wanted
+\phone{(834)1725995}                      % optional, remove the line if not wanted
+\email{j2deme@gmail.com}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{perfil}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Personal Information}
+\cvline{Birthday}{August 21, 1987}
+\cvline{Birthplace}{Ciudad Valles, San Luis Potos\'i. M\'exico}
+\cvline{Citizenship}{Mexican}
+\cvline{Marital Status}{Married}
+\cvline{CURP}{DEMJ870821HSPLRM03}
+\cvline{RFC}{DEMJ870821AA3}
+\cvline{Professional Identification Card}{6495229}
+
+\section{Master Thesis}
+\cvline{Title}{\emph{AdaptText: Middleware based on profles for administration, supervision and generation of dynamic text contents.}}
+\cvline{Supervisor}{Ph.D. Jos\'e Luis Gonz\'alez Compe\'an}
+
+\section{Education}
+\cventry{2005 -- 2009}{Bachelor Degree in Computer Science}{Instituto Tecnol\'ogico de Cd. Valles}{Cd. Valles, San Luis Potos\'i}{}{Major at Information Technologies Management}  % arguments 3 to 6 can be left empty
+\cventry{2002 -- 2005}{Computer Technician}{Colegio de Bachilleres Plantel 06}{Cd. Valles, San Luis Potos\'i}{}{}
+
+\section{Research Skills}
+\cvline{}{Knowledge of parallel disk systems, block distributions on homogeneous and heterogeneous storage systems in distributed environments. Architecture of storage systems simulators and building modules for distributing blocks on RAID systems.}
+
+\pagebreak
+
+\section{Publications}
+\cvline{2010}{\textbf{HRaidTools: An on-line Suite of Simulation Tools for Heterogeneous RAID systems.} J.L. Gonz\'alez, Toni Cortes, Jaime Delgado-Meraz, Ana Piedad-Rubio. Third International Conference on Simulation Tools and Techniques (SIMUTools 2010). Malaga, Espa\~na - Marzo 15 - 19, 2010.}
+\cvline{2009}{\textbf{Current Approaches Based on Adaptive Storage, Modelos Actuales Basados en Almacenamiento Adaptivo.} Dalia Rosario Hern\'andez, J.L. Gonz\'alez, Jaime Delgado-Meraz. Revista Teczapic. Agosto - Diciembre 2009 Volumen 1 No. 6.}
+
+\section{Research Projects}
+\cvlistitem{\textbf{AdaptRaid Middleware}\\ DGEST Registration Number: \textit{VAL-LI-2008-201}\\Validity: \textit{09/04/2008 -- 02/04/2009}\\Function: \textit{Social worker}}
+\cvlistitem{\textbf{HRaid Online Project}\\ DGEST Registration Number: \textit{VAL-LI-2008-204}\\Validity: \textit{02/08/2008 -- 12/05/2009}\\Function: \textit{Collaborator}}
+\cvlistitem{\textbf{TreeStore}\\ DGEST Registration Number: \textit{VAL-LI-2009-201}\\Validity: \textit{01/09/2009 -- 01/09/20010}\\Function: \textit{Resident}}
+
+\section{Developments and Prototypes}
+\cvlistitem{\textbf{HRaidTools: A simulation Tool for Heterogeneous RAID Systems}\\ Available at: \textcolor{RoyalBlue}{www.adaptivez.org.mx/HRaidTools}\\Functions: Programming and Maintainance.}
+\cvlistitem{\textbf{Distributed Storage Systems based on Adaptive Redundancy}\\ Available at: \textcolor{RoyalBlue}{www.adaptivez.org.mx/TreeStore}\\Functions: Programming and Maintainance.}
+\cvlistitem{\textbf{OES: Online Evaluation System}\\ Available at: \textcolor{RoyalBlue}{www.adaptivez.org.mx/OES}\\Functions: Creation, Design, Programming and Maintainance.}
+\cvlistitem{\textbf{ACW: Adaptive Collaborative Work Architecture}\\ Available at: \textcolor{RoyalBlue}{www.adaptivez.org.mx/NENEK}\\Functions: Implementation}
+\cvlistitem{\textbf{Adaptivez}\\ Available at: \textcolor{RoyalBlue}{www.adaptivez.org.mx}\\Functions: Webmaster.}
+
+\pagebreak
+\section{Awards and Recognitions}
+\cvline{February 2010}{\textbf{3\superscript{rd} place of knowledge at the Bachelor Degree in Computer Science's career Gen. 2005 -- 2009}, \textit{Instituto Tecnol\'ogico de Ciudad Valles}, Cd. Valles, San Luis Potos\'i.}
+\cvline{September 2009}{\textbf{Participation at the XXIV National Creativity Event -- Regional Phase Zone II}, \textit{Instituto Tecnol\'ogico de Piedras Negras}, Piedras Negras, Coahuila.}
+\cvline{June 2009}{\textbf{2\superscript{nd} place at the XXIV National Creativity Event -- Local Phase}, \textit{Instituto Tecnol\'ogico de Ciudad Valles}, Cd. Valles, San Luis Potos\'i.}
+
+
+\section{Computer Skills}
+\cvcomputer{OS}{GNU/Linux (Ubuntu, Debian), Windows (98, XP, Vista, Windows 7)}{Admin}{Apache Web Server}
+\cvcomputer{Office Software}{Microsoft Office and OpenOffice}{Hardware}{Intermediate level}
+\cvcomputer{Structured Programming and OOP}{Java, Visual Basic, Python, C/C++}{Mobile Programming}{J2ME, Android}
+\cvcomputer{Layout}{\LaTeX{}}{Scripting}{PHP (High level), Bash Scripting (Intermediate level)}
+\cvcomputer{Web Design}{XHTML,XML, CSS, jQuery}{OR DBMS}{PostgreSQL, MySQL, SQLite}
+
+\section{Languages}
+\cvlanguage{Spanish}{Native Speaker}{}
+\cvlanguage{English}{High level}{Professional Training for ESL Teachers Diplomado}
+
+\section{Complementary Education}
+\subsection{Information Technologies}
+\cventry{November 2009}{Workshop: Vector spaces in distributed storage systems}{Instituto Tecnol\'ogico de Ciudad Valles}{Cd. Valles, S.L.P.}{}{Presented by Ph.D. Ricardo Marcel\'in Jim\'enez.}
+
+\subsection{English}
+\cventry{June 2010}{Evaluation Process at English Teaching}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{Record of participation during the jobs of the Evaluation Process at English Teaching. (\textit{40 hours})}
+\cventry{February -- August 2008}{Professional Training for ESL Teachers}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{English Diplomado in the areas of Teaching Theories and Techniques, Writing, Grammar, Phonetic, Vocabulary, Text Comprehension, Oral Interpretation, Translation and Group Management. (\textit{160 hours})}
+\cventry{March 2008}{Update on English Language Teaching}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{Update Seminar on Teaching techniques and use of multimedia, within the celebrations of the cultural week, at the XXIV Anniversary from the Campus and 85 years of the university Autonomy. (\textit{320 hours})}
+\cventry{August -- December 2007}{Teacher's Developmente Seminar II}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{English Seminar at the areas of Vocabulary, Text Comprehension, Oral Interpretation, Translation and Group Management. (\textit{320 hours})}
+\cventry{February -- July 2007}{Teacher's Developmente Seminar I}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{English Seminar at the areas of Writing, Grammar and Phonetic. (\textit{240 hours})}
+\cventry{September -- December 2006}{Teacher's Workshop}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{English Workshop at the areas of Conversation, Phonetic and Grammar. (\textit{70 hours})}
+\cventry{2001 -- 2005}{English Levels I -- VI}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{English Course (\textit{480 hours})}
+
+\section{Professional Experience}
+\cventry{January 2008 -- July 2010}{English Teacher}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P.}{}{English Teacher on the 40, 48 and 80 hours courses for children, teenagers and adults.}
+
+\section{References}
+\cvlistitem{Dr. Jos\'e Luis Gonz\'alez Comp\'ean\\(481)38.1.20.44 ext. 129\\Depto. de Sistemas y Computaci\'on, Instituto Tecnol\'ogico de Ciudad Valles.\\
+joseluig@gmail.com\\}
+\cvlistitem{Dr. Ricardo Marcel\'in Jim\'enez\\(55)58.04.46.36 ext. 268\\Depto. de Ing. El\'ectrica, UAM-Iztapalapa\\
+calu@xanum.uam.mx}
+
+\end{document}
