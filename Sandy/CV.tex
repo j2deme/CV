@@ -1,0 +1,141 @@
+% arara: pdflatex
+% arara: pdflatex
+% arara: clean: { files: [CV.aux, CV.out, CV.toc, CV.log]}
+
+\documentclass[11pt,letterpaper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage{hyperref}
+\usepackage[pdftex]{xcolor}
+%\DefineNamedColor{named}{RoyalPurple}{cmyk}{0.75,0.90,0,0}
+\definecolor{RoyalBlue}{cmyk}{1,0.50,0,0}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Jaime Jes\'us}
+\familyname{\\Delgado Meraz}
+\title{Licenciado en Inform\'atica}
+\address{Calle Zacatecas \#415}{Col. Marquez CP. 79010 Ciudad Valles, S.L.P.}% OPT
+\mobile{8341754435}
+\phone{(481)3815957}
+\email{j2deme@gmail.com}
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{DSC07117}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}% uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Informaci\'on Personal}
+\cvline{Fecha de Nacimiento}{21 Agosto 1987}
+\cvline{Lugar de Nacimiento}{Ciudad Valles, San Luis Potos\'i. M\'exico}
+\cvline{Nacionalidad}{Mexicana}
+\cvline{Estado Civil}{Casado}
+\cvline{CURP}{DEMJ870821HSPLRM03}
+\cvline{RFC}{DEMJ870821AA3}
+\cvline{C\'edula Profesional}{6495229}
+
+\section{Residencia Profesional}
+\cvline{T\'itulo}{\emph{AdaptText: Middleware basado en perfiles para la administraci\'on, supervisi\'on y ge\-ne\-ra\-ci\'on din\'amica de contenidos de texto.}}
+\cvline{Asesor}{Dr. Jos\'e Luis Gonz\'alez Compe\'an}
+
+\section{Formaci\'on Acad\'emica}
+\cventry{2011 -- 2013}{Maestría Profesionalizante en Sistemas Computacionales}{Instituto Tecnol\'ogico de Ciudad Victoria}{Cd. Victoria, Tamaulipas}{}{Especialidad en Ingenier\'ia de Software (En curso)}
+\cventry{2005 -- 2009}{Licenciado en Inform\'atica}{Instituto Tecnol\'ogico de Cd. Valles}{Cd. Valles, San Luis Potos\'i}{}{Especialidad en Gesti\'on de Tecnolog\'ias de Informaci\'on}
+\cventry{2002 -- 2005}{Especialidad en Inform\'atica}{Colegio de Bachilleres Plantel 06}{Cd. Valles, San Luis Potos\'i}{}{}
+
+\pagebreak
+
+\section{Habilidades de Investigaci\'on}
+\cvline{}{Conocimiento de sistemas de discos paralelos, distribuci\'on de bloques en sistemas de almacenamiento homog\'eneos y heterog\'eneos en sistemas distribuidos, simuladores de arquitecturas de almacenamiento y construcci\'on de m\'odulos para sistemas de distribuci\'on de bloques en sistemas RAID.}
+
+\section{Publicaciones}
+\cvline{2010}{\textbf{HRaidTools: An on-line Suite of Simulation Tools for Heterogeneous RAID systems.} J.L. Gonz\'alez, Toni Cortes, Jaime Delgado-Meraz, Ana Piedad-Rubio. Third International Conference on Simulation Tools and Techniques (SIMUTools 2010). Malaga, Espa\~na - Marzo 15 -- 19, 2010.}
+\cvline{2009}{\textbf{Modelos Actuales Basados en Almacenamiento Adaptivo, Current Approaches Based on Adaptive Storage.} Dalia Rosario Hern\'andez, J.L. Gonz\'alez, Jaime Delgado-Meraz. Revista Teczapic. Agosto - Diciembre 2009 Volumen 1 No. 6.}
+
+\section{Proyectos de Investigaci\'on}
+\cvlistitem{\textbf{AdaptRaid Middleware}\\ No. Registro DGEST: \textit{VAL-LI-2008-201}\\Vigencia: \textit{09/04/2008 -- 02/04/2009}\\Funci\'on: \textit{Servidor Social}}
+\cvlistitem{\textbf{HRaid Online Project}\\ No. Registro DGEST: \textit{VAL-LI-2008-204}\\Vigencia: \textit{02/08/2008 -- 12/05/2009}\\Funci\'on: \textit{Colaborador}}
+\cvlistitem{\textbf{TreeStore}\\ No. Registro DGEST: \textit{VAL-LI-2009-201}\\Vigencia: \textit{01/09/2009 -- 01/09/2010}\\Funci\'on: \textit{Residente}}
+
+\section{Desarrollos y Prototipos}
+\cvlistitem{\textbf{HRaidTools: A simulation Tool for Heterogeneous RAID Systems}\\ Disponible en: \textcolor{RoyalBlue}{www.adaptivez.org.mx/HRaidTools}\\Funciones: Programaci\'on y Mantenimiento.}
+\cvlistitem{\textbf{Distributed Storage Systems based on Adaptive Redundancy}\\ Disponible en: \textcolor{RoyalBlue}{www.adaptivez.org.mx/TreeStore}\\Funciones: Programaci\'on y Mantenimiento.}
+\cvlistitem{\textbf{OES: Online Evaluation System}\\ Disponible en: \textcolor{RoyalBlue}{www.adaptivez.org.mx/OES}\\Funciones: Creaci\'on, Dise\~no,Programaci\'on y Mantenimiento.}
+\cvlistitem{\textbf{ACW: Adaptive Collaborative Work Architecture}\\ Disponible en: \textcolor{RoyalBlue}{www.adaptivez.org.mx/NENEK}\\Funciones: Implementaci\'on.}
+\cvlistitem{\textbf{Adaptivez}\\ Disponible en: \textcolor{RoyalBlue}{www.adaptivez.org.mx}\\Funciones: Webmaster.}
+
+%\pagebreak
+\section{Premios y Reconocimientos}
+\cvline{Febrero 2010}{\textbf{3\superscript{er} lugar de aprovechamiento de la carrera de Licenciatura en Inform\'atica Gen. 2005 -- 2009}, \textit{Instituto Tecnol\'ogico de Ciudad Valles}, Cd. Valles, San Luis Potos\'i.}
+\cvline{Septiembre 2009}{\textbf{Participaci\'on XXIV Evento Nacional de Creatividad -- Fase Regional Zona II}, \textit{Instituto Tecnol\'ogico de Piedras Negras}, Piedras Negras, Coahuila.}
+\cvline{Junio 2009}{\textbf{2\superscript{o} lugar XXIV Evento Nacional de Creatividad -- Fase Local}, \textit{Instituto Tecnol\'ogico de Ciudad Valles}, Cd. Valles, San Luis Potos\'i.}
+
+
+\section{Conocimientos Inform\'aticos}
+\cvcomputer{Sistemas Operativos}{Linux (Ubuntu, Debian), Windows (98, XP, Vista, Windows 7)}{Administraci\'on Web}{Servidor Apache}
+\cvcomputer{Ofim\'atica}{Suite Inform\'atica Microsoft Office y OpenOffice}{Hardware}{Nivel Intermedio}
+\cvcomputer{Programaci\'on Estructurada y OO}{Java, Visual Basic, Python, C/C++}{Programaci\'on M\'ovil}{J2ME, Android}
+\cvcomputer{Maquetaci\'on}{\LaTeX{}}{Scripting}{PHP (Avanzado), Bash Scripting (Intermedio)}
+\cvcomputer{Dise\~no Web}{HTML, XML, CSS, jQuery, Node.js}{Base de Datos}{PostgreSQL, MySQL, SQLite}
+\cvcomputer{Software Educativo}{Moodle, Articulate Studio}{}{}
+
+\section{Idiomas}
+\cvlanguage{Espa\~nol}{Nativo}{}
+\cvlanguage{Ingl\'es}{Alto}{Diplomado Professional Training for ESL Teacher}
+
+\section{Formaci\'on Complementaria}
+\subsection{Tecnolog\'ias de la Informaci\'on}
+\cventry{Agosto 2010 -- Abril 2011}{Cursos Varios}{Laboratorio de Tecnolog\'ias de Informaci\'on-Tamaulipas del Centro de Investigaci\'on y de Estudios Avanzados del Instituto Polit\'ecnico Nacional}{Cd. Victoria, Tamps}{}{Cursos de Programaci\'on Orientada a Objetos, Matem\'aticas Discretas, Bases de Datos, Ingenier\'ia de Software, An\'alisis y Dise\~no de Algoritmos, Computaci\'on Paralela, C\'omputo M\'ovil y Sistemas Distribuidos.}
+\cventry{Noviembre 2010}{Taller: Introducci\'on a Blender 3D}{Laboratorio de Tecnolog\'ias de Informaci\'on-Tamaulipas del Centro de Investigaci\'on y de Estudios Avanzados del Instituto Polit\'ecnico Nacional}{Cd. Victoria, Tamps}{}{Impartido por el Ing. Octavio A. M\'endez S\'anchez. (\textit{6 horas})}
+\cventry{Noviembre 2009}{Curso -- Taller: Espacios Vectoriales en Sistemas de Almacenamiento Distribuido}{Instituto Tecnol\'ogico de Ciudad Valles}{Cd. Valles, S.L.P}{}{Impartido por el Dr. Ricardo Marcel\'in Jim\'enez.}
+
+\subsection{Ingl\'es}
+\cventry{Agosto 2011}{Examen TOEFL ITP}{Universidad Polit\'ecnica de Victoria}{Cd. Victoria, Tamps}{}{Puntaje: 610}
+\cventry{Junio 2010}{Procesos de Evaluaci\'on en la Ense\~nanza de Ingl\'es}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P}{}{Constancia de participaci\'on en la Jornada de Evaluaci\'on en la Ense\~nanza del idioma Ingl\'es. (\textit{40 horas})}
+\cventry{Febrero -- Agosto 2008}{Professional Training for ESL Teachers}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P}{}{Diplomado del idioma Ingl\'es en las \'areas de Teor\'ias y M\'etodos de Ense\~nanza, Redacci\'on, Gram\'atica, Fon\'etica, Vocabulario, Comprensi\'on de Textos, Interpretaci\'on, Traducci\'on y Manejo de Grupo. (\textit{160 horas})}
+\cventry{Marzo 2008}{Actualizaci\'on en la Ense\~nanza del idioma Ingl\'es}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P}{}{Seminario de actualizaci\'on de t\'ecnicas de ense\~nanza y uso de multimedios, en el marco de los festejos de la semana cultural, con motivo del XXIV Aniversario del Campus y 85 a\~nos de Autonom\'ia Universitaria. (\textit{320 horas})}
+\cventry{Agosto -- Diciembre 2007}{Teacher's Developmente Seminar II}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P}{}{Seminario del idioma Ingl\'es en las \'areas de Vocabulario, Comprensi\'on de Textos, Interpretaci\'on, Traducci\'on y Manejo de Grupo. (\textit{320 horas})}
+\cventry{Febrero -- Julio 2007}{Teacher's Developmente Seminar I}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P}{}{Curso Taller del idioma Ingl\'es en las \'areas de Conversaci\'on, Fon\'etica y Gram\'atica (\textit{240 horas})}
+\cventry{Septiembre -- Diciembre 2006}{Teacher's Workshop}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P}{}{Curso -- Taller del idioma Ingl\'es en las \'areas de Conversaci\'on, Fon\'etica y Gram\'atica. (\textit{70 horas})}
+\cventry{2001 -- 2005}{Idioma Ingl\'es Niveles I -- VI}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L..}{}{Curso del idioma Ingl\'es (\textit{480 horas})}
+
+\section{Experiencia Docente}
+\cventry{Agosto 2011 -- Diciembre 2012}{Profesor de Ingl\'es}{Universidad Polit\'ecnica de Victoria}{Cd. Victoria, Tamps}{}{Profesor en cursos de Ingl\'es para las carreras de Ingenier\'ia en Tecnolog\'ias de la Informaci\'on e Ingenier\'ia en Mecatr\'onica.}
+\cventry{Enero 2008 -- Julio 2010}{Profesor de Ingl\'es}{Centro de Idiomas Universitario, Universidad Aut\'onoma de San Luis Potos\'i Zona Huasteca}{Cd. Valles, S.L.P}{}{Profesor en cursos de Ingl\'es de 40, 48 y 80 horas a ni\~nos, adolescentes y adultos.}
+
+\section{Experiencia Profesional}
+\cventry{Julio -- Agosto 2011}{Traductor}{Universidad Polit\'ecnica de Victoria}{Cd. Victoria, Tamps}{}{Traducci\'on de documentos digitales para la empresa SVAM International.}
+\cventry{Mayo -- Julio 2011}{Dise\~nador de contenidos digitales}{Universidad Da Vinci}{Cd. Victoria, Tamps}{}{Manejo de la plataforma Moodle para la publicaci\'on de contenidos digitales.}
+
+\section{Referencias}
+\cvlistitem{Dr. Jos\'e Luis Gonz\'alez Comp\'ean\\Depto. de Sistemas y Computaci\'on, Instituto Tecnol\'ogico de Ciudad Valles.\\(481)38.1.20.44, joseluig@gmail.com}
+\cvlistitem{Dr. Pedro Luis S\'anchez Orellana\\Coordinador de la Maestr\'ia en Sistemas Computacionales, Divisi\'on de Estudios de Posgrado e Investigaci\'on, Instituto Tecnol\'ogico de Ciudad Victoria\\(834)15.3.20.00 ext. 325, pedro\_sanchez@itvictoria.edu.mx}
+%\cvlistitem{Dr. Ricardo Marcel\'in Jim\'enez\\(55)58.04.46.36 ext. 268\\Depto. de Ing. El\'ectrica, UAM-Iztapalapa\\calu@xanum.uam.mx}
+
+\end{document}
