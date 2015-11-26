@@ -1,0 +1,91 @@
+% arara: pdflatex
+% arara: pdflatex
+% arara: clean: { files: [Carta-Aseguradora.aux, Carta-Aseguradora.out, Carta-Aseguradora.toc, Carta-Aseguradora.log]}
+\documentclass[11pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\usepackage[pdftex]{graphicx}
+
+\pagestyle{empty}
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Jaime Jesús}
+\def\familyname{Delgado Meraz}
+\def\FileAuthor{\firstname~\familyname}
+\def\FileTitle{\firstname \familyname Carta Aseguradora}
+\def\FileSubject{\FileTitle}
+\def\FileKeyWords{\firstname \familyname, Carta Aseguradora}
+\renewcommand{\ttdefault}{pcr}
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a r\'esum\'e using sans serif fonts;
+%\rmfamily  % for use with a r\'esum\'e using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+%{\bfseries L.I.~\FileAuthor}
+~\\[.35ex]
+\small\itshape%
+%L.I.\\
+%postcode city\\[.35ex]
+%\Telefon~phone number\\
+%\Letter~\href{mailto:j2deme@gmail.com}{j2deme@gmail.com}
+\end{minipage}\\[1em]
+%
+\begin{minipage}[t]{.4\textwidth}
+%\raggedright{\bfseries A quién corresponda}\\[.35ex]
+%\small\itshape%
+\end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\begin{minipage}[t]{.4\textwidth}
+\raggedleft % US style
+%\today
+Cd. Valles, S.L.P. a 16 de Febrero 2015
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+\end{minipage}\\[2em]
+\raggedright
+\textbf{A quien corresponda}:\\[1.5em]
+
+Por medio de la presente hago de su conocimiento que por motivos ajenos a mi persona, no cuento con los siguientes accesorios del vehículo Chevrolet Aveo color negro, número de serie 3G1TX52609L107307:
+\begin{itemize}
+  \item Duplicado de llaves
+  \item Cruceta
+  \item Gato
+  \item Manual del Vehículo
+\end{itemize}
+
+Analizando los registros del vehículo, es posible observar que el automóvil ha tenido múltiples dueños desde su compra directa en agencia, desconozco si los elementos listados fueron retenidos o extravíados por alguno de los dueños anteriores, pero no me fueron entregados al momento de la compra al dueño previo, por lo cual no me es posible entregarlos.
+
+Con respecto al duplicado de llaves, el único juego que tengo disponible, esta en resguardo junto con el vehículo, en el taller designado por la empresa aseguradora, para el siniestro identificado con el folio B31285053.
+
+Una vez sentado dichos elementos, y sin más por agregar, me despido.\\[5em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries~\FileAuthor}\\
+%
+\vfill%
+%{\slshape Enclosure}
+%{\slshape Adjunto: Curriculum vit\ae{}}
+\end{document}
