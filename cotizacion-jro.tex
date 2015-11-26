@@ -1,0 +1,83 @@
+% arara: pdflatex
+% arara: pdflatex
+% arara: clean: { files: [cotizacion-jro.aux, cotizacion-jro.out, cotizacion-jro.toc, cotizacion-jro.log]}
+\documentclass[10pt,letterpaper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}
+%\nopagenumbers{}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+% personal data
+\name{MSC. Jaime Jesús}{Delgado Meraz}
+\title{Cotización}
+\address{Calle Río Eufrates \#151}{Fracc. Praderas del Río, Ciudad Valles, S.L.P.}
+%\phone[mobile]{481-115-5821}
+\email{j2deme@gmail.com ~ 481-115-5821}
+%\homepage{www.johndoe.com}
+%\extrainfo{}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Ing. Juan Felipe Contreras Martínez}{JRO Construcciones \& Montajes\\Av. Los Tenek L-5 y 6, Zona Industrial,\\Ej. Tampaya, Ciudad Valles, S.L.P.}
+\date{Ciudad Valles, S.L.P. a \today}
+\opening{Estimado Ingeniero.}
+\closing{Quedando como su más atento y seguro servidor, me despido de usted, no sin antes mencionar que cualquier aclaración o arreglo, estoy a su disposición.}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Por medio de la presente le envió un cordial saludo y a su vez aprovecho por este medio presentarle la siguiente cotización:
+
+Que consiste en la construcción de un sistema integral de control empresarial que consta de los módulos que se listan a continuación:
+
+\begin{itemize}
+  \item Gestión de Clientes y Solicitudes
+  \item Gestión de Recursos Humanos
+  \item Control de Cobros
+  \item Control de Servicios
+  \item Control de Accesos y Asistencia
+\end{itemize}
+
+Se desarrollará un sistema que estará disponible en línea, desde cualquier equipo con acceso a internet, con los respectivos sistemas de control de acceso, haciendo uso del lenguaje de programación PHP y de una base de datos en PostgreSQL, diseñada conforme a las necesidades de la empresa.
+
+Cada uno de los módulos, permitirá la generación de los reportes necesarios, establecidos durante el proceso de entrevista, con las modificaciones y adecuaciones pertinentes, en un formato no editable, listo para impresión.
+
+La cotización incluye la instalación del sistema, en la plataforma que la empresa ofrezca, sin considerar los gastos de compra y gestión del dominio, ni compra y gestión del hosting, los cuales se mencionó durante la entrevista, ya se cuenta con ellos.
+
+La fecha propuesta de entrega final es a 4 meses posteriores a la aceptación formal de la presente cotización, considerando en el costo, la necesidad de la empresa de obtener los módulos de acceso y cobros en un plazo de 3 semanas posteriores al inicio del proyecto. Se ofrecerán también las demostraciones de avances en ciclos de 2 a 3 semanas, o conforme se requiera.
+
+Se considera la disponibilidad de la empresa para ofrecer la asesoría en los formatos y procesos que por su naturaleza, sean desconocidos para su servidor.
+
+Lo anteriormente descrito tendrá un costo de \textbf{\$19,500.00} (diecinueve mil quinientos pesos 00/100 M.N.) más IVA.
+
+Quedando como su más atento y seguro servidor, me despido de usted, no sin antes mencionar que cualquier aclaración o arreglo, estoy a su disposición.
+
+\vspace{0.5cm}Atentamente\vspace{1.5cm}\\\textbf{MSC. Jaime Jesús Delgado Meraz}
+
+%\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
