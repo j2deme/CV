@@ -1,0 +1,256 @@
+% arara: pdflatex
+% arara: pdflatex
+% arara: clean: { files: [CV-Jaime.aux, CV-Jaime.out, CV-Jaime.toc, CV-Jaime.log,CV-Jaime.synctex.gz, CV-Jaime.blg, CV-Jaime.bbl ]}
+
+\documentclass[12pt,letterpaper, sans]{moderncv}
+
+% Last edited: 2023-03-12
+% moderncv themes
+\moderncvstyle{classic} % 'casual' ,'classic', 'oldstyle' y 'banking'
+\moderncvcolor{blue} % 'blue', 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+
+%\usepackage[utf8x]{inputenc}
+%\usepackage{hyperref}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                     % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\name{Jaime Jesús}{Delgado Meraz}
+\title{Master en Sistemas Computacionales}
+\address{Calle Zacatecas \#415, Col. Márquez}{CP. 79010 Ciudad Valles, S.L.P.}
+\phone[mobile]{4811155821}
+%\phone[fixed]{4813815957}
+%\email{j2deme@gmail.com}
+%\email{jaime.dm@cdvalles.tecnm.mx}
+\email{jesus.delgado@tecvalles.mx}
+\photo[64pt][1pt]{IMG_20200304_111905789.jpg}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}% uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Datos Generales}
+  \cvdoubleitem{Fecha de Nacimiento}{21 de Agosto de 1987}{Lugar de Nacimiento}{Ciudad Valles, SLP}
+  \cvdoubleitem{Nacionalidad}{Mexicana}{Estado Civil}{Casado}
+  \cvdoubleitem{CURP}{DEMJ870821HSPLRM03}{RFC}{DEMJ870821AA3}
+  \cvdoubleitem{Cédula Licenciatura}{6495229}{Cédula Maestría}{9488212}
+  \cvdoubleitem{Carta Pasante Doctorado}{00319}{INE}{DLMRJ87082124H200}
+
+\section{Formación Académica}
+  \cventry{2021 -- 2023}{Doctorado en Alta Dirección}{Universidad Yaan}{Cd. Valles, SLP}{}{}
+  \cventry{2011 -- 2013}{Maestría en Sistemas Computacionales}{IT de Ciudad Victoria}{Cd. Victoria, TAMPS}{}{Especialidad en Ingeniería de Software}
+  \cventry{2005 -- 2009}{Licenciado en Informática}{IT de Cd. Valles}{Cd. Valles, SLP}{}{Especialidad en Gestión de Tecnologías de Información}
+
+\section{Experiencia Profesional}
+  \cventry{Ago/2023 a la fecha}{Coordinador de Carrera de Ingeniería Industrial}{IT de Ciudad Valles}{Cd. Valles}{SLP}{}
+  \cventry{Mar/2019 -- Feb/2023}{Subdirector Académico}{IT de Ciudad Valles}{Cd. Valles}{SLP}{}
+  \cventry{Oct/2018 -- Mar/2019}{Encargado del despacho de la Subdirección Académica}{IT de Ciudad Valles}{Cd. Valles}{SLP}{}
+  \cventry{Nov/2016 -- Sept/2018}{Jefe de la División de Estudios Profesionales}{IT de Ciudad Valles}{Cd. Valles}{SLP}{}
+  \cventry{Ene/2013 -- Dic/2016}{Administrador del Sistema Integral de Información (SII)}{IT de Ciudad Valles}{Cd. Valles}{SLP}{Realizando actividades de adecuación y actualización de código, cierres de períodos escolares, generación de reportes, respaldos y mantenimientos a la base de datos.}
+  \cventry{Ago/2010 -- Jun/2019}{Asesor Técnico y desarrollador}{Corporativo Alexandro Miranda y Asociados S.A. de C.V.}{Cd. Valles}{SLP}{Asesoría técnica en las áreas de base de datos, aplicaciones móviles y de escritorio, seguridad informática y mantenimiento de equipos. Diseño y desarrollo de aplicaciones de software para la toma de decisiones}
+  \cventry{Jul -- Ago/2011}{Traductor}{Universidad Politécnica de Victoria}{Cd. Victoria, TAMPS}{}{Traducción de documentos digitales para la empresa SVAM International.}
+  \cventry{May -- Jul/2011}{Diseñador de contenidos digitales}{Universidad Da Vinci}{Cd. Victoria, TAMPS}{}{Manejo de la plataforma Moodle para la publicación de contenidos digitales.}
+
+\section{Experiencia Docente}
+  \cventry{Ene/2013 a la fecha}{Docente}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Docente en asignaturas de los programas educativos de Ingeniería en Tecnologías de la Información e Ingeniería en Sistemas Computacionales en las áreas de Paradigmas de Programación, Estructuras de Datos, Desarrollo Web, Desarrollo Multiplataforma, Bases de Datos e Inteligencia Artificial}
+  \cventry{Ene/2014 -- Dic/2017}{Docente de Inglés}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Profesor en cursos de Inglés para alumnos del IT de Ciudad Valles}
+  \cventry{Ago/2011 -- Dic/2012}{Docente de Inglés}{Universidad Politécnica de Victoria}{Cd. Victoria, TAMPS}{}{Profesor en cursos de Inglés para las carreras de Ingeniería en Tecnologías de la Información e Ingeniería en Mecatrónica.}
+  \cventry{Ene/2008 -- Jul/2010}{Docente de Inglés}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Profesor en cursos de Inglés de 40, 48 y 80 horas a niños, adolescentes y adultos.}
+
+\section{Elaboración y Actualización de Planes y Programas de Estudios}
+  \cvitem{Ene -- Jun/2020}{Elaboración del Estudio de Factibilidad y Pertinencia para la apertura del programa educativo de nivel licenciatura de Ingeniería en Agronomía (IAGR-2010-2017) Modalidad Escolarizada}
+  \cvitem{Ene -- Jun/2020}{Elaboración del Estudio de Factibilidad y Pertinencia para la apertura del programa educativo de nivel licenciatura  de Ingeniería Industrial (IIND-2010-227) Modalidad Mixta}
+  \cvitem{Ene -- Jun/2019}{Diseño y Elaboración de la Especialidad de "Tecnologías Multiplataforma" con clave ISIE-TMP-2019-01 del plan de estudios de la carrera de Ingeniería en Sistemas Computacionales (ISIC-2010-224)}
+  \cvitem{Ene -- Jun/2019}{Desarrollo del programa de estudio por unidad de aprendizaje "Tecnologías Multiplataforma"}
+  \cvitem{Mar/2018}{Elaboración del Estudio de Factibilidad para la apertura del programa educativo nivel licenciatura de Ingeniería en Gestión Empresarial en Modalidad Mixta}
+  \cvitem{Ene -- Jun/2016}{Diseño y Elaboración de la especialidad de "Tecnologías de Software" con clave ISIE-TSW-2016-01 del plan de estudios de la carrera de Ingeniería en Sistemas Computacionales (ISIC-2010-224)}
+  \cvitem{Ene -- Jun/2016}{Desarrollo del programa de estudio por unidad de aprendizaje "Desarrollo de Aplicaciones para Dispositivos Móviles"}
+
+\section{Cursos de Actualización Docente Recibidos}
+  \cventry{Feb/2022}{Curso: Tópicos de Preinscripción a Nuevo Ingreso}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Feb/2021}{Curso: Acompañamiento para el Desarrollo de la Gestión de Cursos en Plataforma}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jun/2019}{Curso: Diseño de Cursos Virtuales Basados en el Diseño Instruccional para Educación Mixta}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Ago/2017}{Curso -- Taller: Perfil Deseable PRODEP}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jul/2015}{Curso: Creación de proyectos formativos integradores (PFI) en base a las competencias construidas por las diferentes academias, desde el enfoque socioformativo}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jul/2014}{Seminario -- Taller: Gestión del curriculum, didáctica y evaluación de competencias desde el enfoque socioformativo}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jun/2013}{Curso: Simulación}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jun/2013}{Curso: Inducción a la Práctica Docente}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{8 horas})}{}
+
+\section{Cursos de Actualización Profesional Recibidos}
+\subsection{Tecnologías de la Información}
+  \cventry{Ene/2022}{Curso: Tópicos de Inteligencia Artificial con Python}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Nov/2021}{Curso: Ethical Hacking}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Ene/2021}{Curso: Big Data}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Ene/2018}{Curso: Desarrollo Web Ágil}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Ago/2017}{Curso: Arduino}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jun/2017}{Curso: Network Defender}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jun/2017}{Curso: Ethical Hacking}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Ene/2016}{Curso: Diseño Web}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jun/2015}{Curso -- Taller: Instalación y Capacitación del SII}{IT de Ciudad Cuauhtémoc}{Cd. Cuauhtémoc, CHIH}{(\textit{30 horas})}{}
+  \cventry{Ene/2015}{Curso -- Taller: Certificación Microsoft Office Specialist (MOS) 2013}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Dirigido a docentes y personal de apoyo. (\textit{40 horas})}
+  \cventry{Jun/2014}{Curso -- Taller: Construcción de nubes privadas para el personal del proyecto Nenek}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Jun/2014}{Curso: Nubes Privadas y Procesamiento Masivo de Información}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Impartido por videoconferencia desde el CINVESTAV-LTI Tamaulipas}
+  \cventry{Ago/2010 -- Abr/2011}{Cursos Varios}{Laboratorio de Tecnologías de Información-Tamaulipas del Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional}{Cd. Victoria, TAMPS}{}{Cursos de Programación Orientada a Objetos, Matemáticas Discretas, Bases de Datos, Ingeniería de Software, Análisis y Diseño de Algoritmos, Computación Paralela, Cómputo Móvil y Sistemas Distribuidos.}
+  \cventry{Nov/2010}{Taller: Introducción a Blender 3D}{Laboratorio de Tecnologías de Información-Tamaulipas del Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional}{Cd. Victoria, TAMPS}{}{Impartido por el Ing. Octavio A. Méndez Sánchez. (\textit{6 horas})}
+  \cventry{Nov/2009}{Curso -- Taller: Espacios Vectoriales en Sistemas de Almacenamiento Distribuido}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Impartido por el Dr. Ricardo Marcelín Jiménez.}
+
+\subsection{Gestión Departamental y Liderazgo}
+  \cventry{Abr/2022}{Curso: Transferencia Primaria}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{40 horas})}{}
+  \cventry{Ene/2022}{Curso: Control del Ejercicio Presupuestal Mediante el Sistema Integral de Planeación}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{40 horas})}{}
+  \cventry{Sept/2019}{Curso: El Liderazgo en el Servidor Público}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{40 horas})}{}
+  \cventry{Mar/2019}{Curso: Inducción a la Planeación Estratégica Institucional y su Implementación en el Sistema de Gestión Estratégica}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Ago/2018}{Curso: Análisis del Sistema de Responsabilidades; Acuerdo Presidencial y Lineamiento General de Acta Entrega - Recepción e Igualdad de Género y No Discriminación}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{May/2018}{Curso -- Taller: Sistema de Gestión Estratégica}{IT de Morelia}{Morelia, MICH}{(\textit{15 hrs})}{}
+  \cventry{May/2018}{Curso: Administración del Tiempo y Manejo del Estrés}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+  \cventry{Nov/2017}{Curso -- Taller: Aspectos Ambientales y Legislación Ambiental}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Constancia otorgada por Gitak: Estrategias Empresariales. (\textit{24 horas})}
+  \cventry{Sept/2017}{Curso -- Taller: Desarrollo e Implementación de un SGI bajo las Normas ISO 9001 y 14000 versión 2015}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Constancia otorgada por Gitak: Estrategias Empresariales. (\textit{16 horas})}
+  \cventry{Abr/2017}{Mapeo de Procesos y Gestión de Riesgos}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{Constancia otorgada por Gitak: Estrategias Empresariales. (\textit{24 horas})}
+
+\section{Cursos Impartidos}
+  \cvline{Ago/2022}{Instructor del curso \textbf{Desarrollo Web con Laravel} en el \textit{IT de Ciudad Valles}, Cd. Valles, SLP (\textit{30 horas})}
+  \cvline{Ago/2016}{Instructor del curso \textbf{Diseño de Bases de Datos} en el \textit{IT de Ciudad Valles}, Cd. Valles, SLP (\textit{30 horas})}
+  \cvline{Jul/2015}{Instructor del curso \textbf{Actualización del Sistema Integral de Información} en el \textit{IT del Istmo}, Juchitan de Zaragoza, OAX. (\textit{40 horas})}
+  \cvline{Oct/2014}{Instructor del curso -- taller \textbf{Control de Versiones con Git}, realizado en la semana Agentes de Cambio en el marco del XXXIV Aniversario del Instituto, \textit{IT de Ciudad Valles}, Cd. Valles, SLP (\textit{5 horas})}
+  \cvline{Feb/2014}{Instructor del curso -- taller \textbf{Introducción al uso del framework Slim PHP}, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+
+\section{Certificaciones}
+  \cventry{Ene/2015}{Certificación Microsoft Office Specialist - Office Word 2013}{IT de Ciudad Valles}{Cd. Valles, SLP}{CERTIPORT wqGee-22LV}{}
+  \cventry{Ene/2015}{Certificación Microsoft Office Specialist - Office Excel 2013}{IT de Ciudad Valles}{Cd. Valles, SLP}{CERTIPORT wycoX-4SH4}{}
+  \cventry{Ene/2015}{Certificación Microsoft Office Specialist - Office PowerPoint 2013}{IT de Ciudad Valles}{Cd. Valles, SLP}{CERTIPORT 2DUC-XLpw}{}
+
+\section{Investigación}
+  \cvitem{Oct/2015 a la fecha}{\textbf{Colaborador} del cuerpo académico \emph{Tecnologías de Software Aplicadas al Cómputo Científico y Lingüistico}.}
+  \cvitem{Ene -- Dic/2016}{\textbf{Colaborador}  en el proyecto \emph{Integración de las TICs al proceso de aprendizaje de la lectura y escritura de la lengua Tének}, en el marco del proyecto Ka Exla, realizado en la Asociación Civil "Dhuchum Tsalap Ti Tének"}
+
+\section{Publicaciones y Ponencias}
+  \cvitem{2021}{\textbf{Uso de la Plataforma Moodle: Un Análisis Previo a la Nueva Normalidad} M. Chávez Hernández, K. Berlanga Reséndiz, J.J Delgado Meraz, J.J. Cruz Moctezuma. TECTZAPIC Revista de divulgación académico - científica Vol. 6, No. 2, Diciembre 2020}
+  \cvitem{2018}{\textbf{ABO: Plataforma para la gestión de un padrón georreferenciado de donantes de sangre} J.J. Delgado-Meraz, D.R. Hernández-López, J.I. Rodríguez-Pérez, G. Vitales-Contreras. ECORFAN: Revista de Aplicación Científica y Técnica Vol. 2, Número 5 (ISSN: 2531-2197), Junio 2018}
+  \cvitem{2016}{\textbf{Entorno de Aprendizaje de Idiomas Originarios} D.R. Hernández López, R.M. Jiménez Maldonado, J,J. Delgado Meraz, J. Briones Sánchez. TECZAPIC Revista de divulgación científica y tecnológica. Edición Especial Memorias del Foro: Situaciones Educativas y Tecnológicas en Contextos Indígenas Volumen 2 No. 2 (ISSN: 2444-4944). Ciudad Valles, San Luis Potosí, México, Diciembre 2016}
+  \cvitem{2016}{\textbf{Implantación del prototipo "Sistema Unificado de Análisis de Proyectos" (SUAP), caso de estudio GISAA} D.R. Hernández López, R.M. Jiménez Maldonado, A.M. Piedad Rubio, J.J. Delgado Meraz. CICA 2016: Congreso Interdisciplinario de Cuerpos Académicos. Guanajuato, Guanajuato, México, 17 y 18 de Noviembre 2016}
+  \cvitem{2016}{\textbf{Implantación del prototipo "Sistema Unificado de Análisis de Proyectos" (SUAP), caso de estudio GISAA} D.R. Hernández López, R.M. Jiménez Maldonado, A.M. Piedad Rubio, J.J. Delgado Meraz. ECORFAN: Revista de Aplicación Científica y Técnica Vol. 2, Número 3 (ISSN: 2444-4928) Marzo 2016}
+  \cvitem{2015}{\textbf{NENEK-EGAD: Esquema de Almacenamiento para la gestión del acervo digitalizado.} R. M. Jiménez Maldonado, D. R. Hernández López, J. J. Delgado Meraz. XLII Conferencia Nacional de Ingeniería de la ANFEI. Ensenada, Baja California, México, Junio 15 -- 17, 2015.}
+  \cvitem{2010}{\textbf{HRaidTools: An on-line Suite of Simulation Tools for Heterogeneous RAID systems.} J.L. González, Toni Cortes, Jaime Delgado-Meraz, Ana Piedad-Rubio. 3rd International Conference on Simulation Tools and Techniques (SIMUTools 2010). Malaga, Espa\~na, Marzo 15 -- 19, 2010.}
+  \cvitem{2009}{\textbf{Modelos Actuales Basados en Almacenamiento Adaptivo, Current Approaches Based on Adaptive Storage.} Dalia Rosario Hernández, J.L. González, Jaime Delgado-Meraz. TECTZAPIC Revista de divulgación científica y tecnológica. Agosto - Diciembre 2009 Volumen 1 No. 6.}
+
+\section{Miembro de Asociaciones, Comisiones y Comités}
+\cventry{Sept/2019 -- Feb/2023}{Miembro del Comité de Gestión de Energía}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Jun/2019 -- Feb/2023}{Miembro del Comité de Planeación}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{May/2019 -- Feb/2023}{Miembro del Comité de Seguimiento de Egresados del IT de Ciudad Valles}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Mar/2019 -- Feb/2023}{Secretario Académico del Consejo Editorial}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Oct/2019 -- Feb/2023}{Presidente del Comité Académico}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Jun/2018 -- Oct/2019}{Representante de la Comunidad de la Institución de la Comisión de Apoyo a la Competitividad y Mercado Laboral del Comité de Vinculación}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Jun/2018 -- Oct/2019}{Presidente Suplente del Subcomité de Ética y Prevención de Conflictos de Interés del IT de Ciudad Valles}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Feb/2018 -- Oct/2019}{Miembro Representante del Personal Docente del Comité de Buzón de Quejas, Sugerencias y/o Felicitaciones}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Jun/2017}{Auditor en Formación}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+\cventry{Nov/2016 -- Oct/2019}{Secretario del Comité Académico}{IT de Ciudad Valles}{Cd. Valles, SLP}{}{}
+
+\section{Logros y Reconocimientos}
+\cvitem{Nov/2021}{Organizador en el \textbf{III Congreso Nacional de Ingeniería y Biotecnología de Alimentos}, Cd. Valles, SLP}
+\cvitem{Oct/2019}{Coordinador General del \textbf{Foro de Educación, Ciencia y Tecnología 2019}, Cd. Valles, SLP}
+\cvitem{Oct/2019}{Integrante del proyecto \textbf{Sistema para el Seguimiento Reticular para la Detección de Casos de Riesgo de Deserción por Causas Académicas} en la convocatoria "Mejores Prácticas 2019" del Sistema de Gestión Integral del Tecnológico Nacional de México, Campus Ciudad Valles, obteniendo el 3er lugar, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+\cvitem{May/2019}{Asesor del proyecto \textbf{RecipeTips} y acreditación a la etapa regional en el Evento Nacional Estudiantil de Innovación Tecnológica 2019 (Etapa Local), \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+
+\cvitem{Dic/2018}{Jurado en el \textbf{XXI Concurso Nacional de Prototipos 2019} y \textbf{Encuentro Nacional de Emprendedores} (Etapa Local), \textit{Centro de Bachillerato Tecnológico y de Servicios No. 46}, Cd. Valles, SLP}
+\cvitem{Oct/2018}{Asesor del proyecto \textbf{ABO} en el Evento Nacional Estudiantil de Innovación Tecnológica 2018 (Etapa Regional), \textit{IT Superior de Fresnillo}, Zacatecas, ZAC.}
+\cvitem{Sept/2018}{Asistencia a la \textbf{Reunión Nacional de Subdirectoras y Subdirectores Académicos del TecNM}, \textit{IT de Chihuahua}, Chihuahua, CHIH.}
+\cvitem{Sept/2018}{Asesor del proyecto \textbf{Plataforma para la gestión de un padrón georeferenciado de donantes de sangre} y acreditación a la etapa nacional en el 6o Encuentro de Jóvenes Investigadores del Estado de San Luis Potosí, \textit{Universidad Autónoma de San Luis Potosí}, San Luis Potosí, SLP}
+\cvitem{Jun/2018}{Asesor del proyecto \textbf{ABO} y acreditación a la etapa regional en el Evento Nacional Estudiantil de Innovación Tecnológica 2018 (Etapa Local), \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+
+\cvitem{Oct/2017}{Coordinador de registro del \textbf{Foro Estatal de Educación, Ciencia y Tecnología 2017}, Cd. Valles, SLP}
+\cvitem{Jun/2017}{Reconocimiento al \textbf{Perfil Deseable y Apoyo}, otorgado por el Programa para el Desarrollo Profesional Docente (PRODEP).}
+\cvitem{Ene/2017}{Asesor finalista del proyecto \textbf{HuasTour} en el concurso Proyecto Multimedia (Fase Regional), San Luis Potosí, SLP}
+
+\cvitem{Dic/2016}{Organizador del \textbf{Foro: "Situaciones educativas y tecnológicas en contextos indígenas"}, Cd. Valles, SLP}
+\cvitem{Nov/2016}{Asesor del proyecto \textbf{HuasTour} en el Evento Nacional Estudiantil de Innovación Tecnológica 2016 (Etapa Nacional), \textit{IT de Pachuca}, Pachuca, HGO}
+\cvitem{Oct/2016}{Organizador del \textbf{Encuentro de hablantes de lenguas originarias "Trabajando para la inclusión educativa"}, Cd. Valles, SLP}
+\cvitem{Sept/2016}{Asesor del proyecto \textbf{HuasTour} y acreditación a la etapa nacional en el Evento Nacional Estudiantil de Innovación Tecnológica 2016 (Etapa Regional, Zona IV), \textit{IT de San Luis Potosí}, Soledad de Graciano Sánchez, SLP}
+\cvitem{Jun/2016}{Asesor del proyecto \textbf{HuasTour} y acreditación a la etapa regional en el Evento Nacional Estudiantil de Innovación Tecnológica 2016 (Etapa Local), \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+\cvitem{Jun/2016}{Organizador del \textbf{Segundo Seminario de Lengua y Cultura "Avances y perspectivas del proyecto KA EXLA"}, Cd. Valles, SLP}
+\cvitem{Feb/2016}{Organizador del \textbf{Primer Seminario de Lengua y Cultura "Orígenes e Importancia de la Lengua Materna"}, Cd. Valles, SLP}
+
+\cvitem{May/2014}{Organizador de la \textbf{2a Feria Tecnológica de ISC}, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+
+\cvitem{Oct/2013}{Jurado del \textbf{3er Concurso de Programación}, realizado en la 1er Semana de Ciencia y Tecnología en el marco del XXXIII Aniversario del Instituto, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+\cvitem{May/2013}{Organizador de la \textbf{1a Feria Tecnológica de ISC}, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+%\cvitem{Febrero 2010}{\textbf{3er lugar de aprovechamiento} de la carrera de Licenciatura en Informática Gen. 2005 -- 2009, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+%\cvitem{Septiembre 2009}{Participante en el \textbf{XXIV Evento Nacional de Creatividad -- Fase Regional Zona II}, \textit{IT de Piedras Negras}, Piedras Negras, Coahuila.}
+%\cvitem{Junio 2009}{Participante en el \textbf{XXIV Evento Nacional de Creatividad -- Fase Local}, obteniendo 2o lugar, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+
+\section{Conferencias Impartidas}
+\cvline{Octubre/2023}{Expositor de la conferencia \textbf{Robótica Educativa como Estrategia para Inducir la Programación} en la \textit{Universidad Intercultural de San Luis Potosí, Campus Tancanhuitz} en el marco del 12o Aniversario de la UICSLP, Tancanhuitz, SLP}
+\cvline{Octubre/2023}{Expositor de la conferencia \textbf{Robótica Educativa como Estrategia para Inducir la Programación} en la \textit{Universidad Intercultural de San Luis Potosí, Campus Tancanhuitz} en el marco del 12o Aniversario de la UICSLP, Tancanhuitz, SLP}
+\cvline{Abr/2023}{Expositor de la conferencia \textbf{Big Data y su Importancia en la Toma de Decisiones} en el \textit{ITS de San Andrés Tuxtla} en el marco del 8o Ciclo de Conferencias de Ciencias Básicas: Pilar de la Ingeniería, San Andrés Tuxtla, VER}
+\cvline{Jul/2021}{Expositor de la conferencia \textbf{Tendencias Futuras de Páginas Web} en el \textit{Colegio de Educación Profesional Técnica del Estado de San Luis Potosí Plantel Ciudad Valles 044}, Cd. Valles, SLP}
+\cvline{Jun/2016}{Expositor de la ponencia \textbf{Seguridad en el uso de aplicaciones móviles y de escritorio} en el marco del 3er Congreso Estatal Intercultural "Hacia una Seguridad Económica con Sentido Humano" en la \textit{Universidad Intercultural de San Luis Potosí, Campus Cerritos}, Cerritos, SLP}
+\cvline{May/2016}{Expositor de la ponencia \textbf{Panorama Actual de la Programación Móvil} en el marco de la Semana de la Informática en el \textit{CONALEP Cd. Valles}, Cd. Valles, SLP}
+\cvline{Jun/2015}{Expositor y autor de la ponencia \textbf{Nenek-EGAD: Esquema de Almacenamiento para la Gestión del Acervo Digitalizado}, presentada en el marco de la \textit{XLII Conferencia Nacional de Ingeniería de la ANFEI}, Ensenada, Baja California.}
+\cvline{Oct/2013}{Expositor de la conferencia \textbf{Control de Versiones en la Nube con Git y Github}, realizado en la 1er Semana de Ciencia y Tecnología en el marco del XXXIII Aniversario del Instituto, \textit{IT de Ciudad Valles}, Cd. Valles, SLP}
+
+\section{Desarrollos y Prototipos}
+\cvlistitem{\textbf{MAB: Módulo de Altas y Bajas}\\Funciones: Diseño, Desarrollo y Mantenimiento (mab.tecvalles.mx)}
+\cvlistitem{\textbf{SEGRET: Sistema de Apoyo al Seguimiento Reticular}\\Funciones: Diseño, Desarrollo y Mantenimiento}
+\cvlistitem{\textbf{SII Tec Valles: Sistema Integral de Información del IT de Ciudad Valles}\\Funciones: Desarrollo de Módulos y Mantenimiento.}
+\cvlistitem{\textbf{HRaidTools: A simulation Tool for Heterogeneous RAID Systems}\\Funciones: Desarrollo y Mantenimiento.}
+\cvlistitem{\textbf{Distributed Storage Systems based on Adaptive Redundancy}\\Funciones: Desarrollo y Mantenimiento.}
+\cvlistitem{\textbf{OES: Online Evaluation System}\\Funciones: Diseño, Desarrollo y Mantenimiento.}
+\cvlistitem{\textbf{ACW: Adaptive Collaborative Work Architecture}\\Funciones: Implementación, Desarrollo y Mantenimiento}
+\cvlistitem{\textbf{Adaptivez}\\Funciones: Webmaster.}
+
+\section{Conocimientos Informáticos}
+\cvdoubleitem{Sistemas Operativos}{Linux, Windows, Mac}{Ofimática}{Certificación Microsoft Office Specialist 2013}
+\cvdoubleitem{Hardware}{Intermedio}{Administración Web}{Intermedio}
+\cvdoubleitem{Programación}{PHP, Java, C/C++, Python, R Studio}{Programación Móvil}{Android (Intermedio), Flutter (Intermedio)}
+\cvdoubleitem{Programación Web}{PHP, JSP, HTML, CSS, JS, Laravel}{Base de Datos}{PostgreSQL, MySQL, SQLite, Sybase}
+\cvdoubleitem{Maquetación}{\LaTeX{}, Markdown}{Scripting}{PHP, Bash, Python}
+\cvdoubleitem{SW Educativo}{Moodle, Google Classroom}{SW Multimedia}{Inkscape, GIMP, Photoshop, Da Vinci Resolve, OBS Studio}
+
+\pagebreak
+\section{Idiomas}
+\cvitemwithcomment{Español}{Nativo}{}
+\cvitemwithcomment{Inglés}{Alto}{Professional Training for ESL Teachers, TOEFL ITP: 610, TKT Module 2: Band 3}
+
+\section{Formación Complementaria}
+\subsection{Investigación}
+\cventry{Jul/2017}{Curso: Generación de una Propuesta para la Consolidación de un CAF}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+\cventry{Dic/2015}{Curso -- Taller: Estrategias y Acciones para trabajar en la consolidación del cuerpo académico del IT de Ciudad Valles}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+\cventry{Ene/2015}{Curso -- Taller: Cuerpos Académicos - Factor de Integración y Productos del Conocimiento}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+\cventry{Nov/2014}{Curso: Redacción de textos académicos}{Universidad Autónoma de San Luis Potosí, Unidad Académica Multidisciplinaria Zona Huasteca}{Cd. Valles, SLP}{}{Impartido dentro del marco de la XIV Feria del Libro Cd. Valles UASLP 2014 (\textit{10 horas})}
+\cventry{Ene/2014}{Curso: Planificación y Generación de Estrategias para la consecución de productos del cuerpo académico}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+
+\subsection{Idiomas}
+\cventry{Ene/2016}{Curso: Lengua Tének Básico}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{30 horas})}{}
+\cventry{Dic/2014}{Teaching Knowledge Test (TKT) Module 2}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Certificado expedido por Cambridge English Language Assessment. Puntaje: Band 3}
+\cventry{Ago/2011}{Examen TOEFL ITP}{Universidad Politécnica de Victoria}{Cd. Victoria, TAMPS}{}{Puntaje: 610}
+\cventry{Jun/2010}{Procesos de Evaluación en la Ense\~nanza de Inglés}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Constancia de participación en la Jornada de Evaluación en la Enseñanza del idioma Inglés. (\textit{40 horas})}
+\cventry{Feb -- Ago/2008}{Professional Training for ESL Teachers}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Diplomado del idioma Inglés en las áreas de Teorías y Métodos de Enseñanza, Redacción, Gramática, Fonética, Vocabulario, Comprensión de Textos, Interpretación, Traducción y Manejo de Grupo. (\textit{160 horas})}
+\cventry{Mar/2008}{Actualización en la Enseñanza del idioma Inglés}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Seminario de actualización de técnicas de enseñanza y uso de multimedios, en el marco de los festejos de la semana cultural, con motivo del XXIV Aniversario del Campus y 85 años de Autonomía Universitaria. (\textit{320 horas})}
+\cventry{Ago -- Dic/2007}{Teacher's Development Seminar II}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Seminario del idioma Inglés en las áreas de Vocabulario, Comprensión de Textos, Interpretación, Traducción y Manejo de Grupo. (\textit{320 horas})}
+\cventry{Feb -- Jul/2007}{Teacher's Development Seminar I}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Curso Taller del idioma Inglés en las áreas de Conversación, Fonética y Gramática (\textit{240 horas})}
+\cventry{Sept -- Dic/2006}{Teacher's Workshop}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Curso -- Taller del idioma Inglés en las áreas de Conversación, Fonética y Gramática. (\textit{70 horas})}
+\cventry{2001 -- 2005}{Idioma Inglés Niveles I -- VI}{Centro de Idiomas Universitario, Universidad Autónoma de San Luis Potosí Zona Huasteca}{Cd. Valles, SLP}{}{Curso del idioma Inglés (\textit{480 horas})}
+
+\subsection{Otros}
+
+\cventry{Feb/2022}{Curso: Salud y Bienestar en las Escuelas Ante Situaciones de Emergencia para un Retorno Seguro}{IT de Ciudad Valles}{Cd. Valles, SLP}{(\textit{36 horas})}{}
+\cventry{May/2016}{Taller: Propiedad Intelectual}{Universidad Autónoma de San Luis Potosí, Unidad Académica Multidisciplinaria Zona Huasteca}{Cd. Valles, SLP}{}{}
+
+\end{document}
