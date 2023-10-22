@@ -1,17 +1,15 @@
 % arara: pdflatex
 % arara: pdflatex
-% arara: clean: { files: [CV-Sandy.aux, CV-Sandy.out, CV-Sandy.toc, CV-Sandy.log]}
+% arara: clean: { files: [CV-Sandy.aux, CV-Sandy.out, CV-Sandy.toc, CV-Sandy.log,CV-Sandy.synctex.gz]}
 
-\documentclass[11pt,letterpaper]{moderncv}
+\documentclass[11pt,letterpaper, sans]{moderncv}
 
 % moderncv themes
-\moderncvtheme[grey]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvstyle{classic}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{purple}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
 
 \usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
-\usepackage{hyperref}
-\usepackage[pdftex]{xcolor}
-%\DefineNamedColor{named}{RoyalPurple}{cmyk}{0.75,0.90,0,0}
-\definecolor{RoyalBlue}{cmyk}{1,0.50,0,0}
+%\usepackage{hyperref}
 
 \newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
 \newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
@@ -24,16 +22,13 @@
 
 % personal data
 \firstname{Sandra}
-\familyname{Medina\\Larios}
-\title{Contador P\'ublico}
-\address{Calle R\'io Eufrates \#151}{Fracc. Praderas del R\'io\\CP. 79030 Ciudad Valles, S.L.P.}% OPT
-\mobile{4811106438}
+\familyname{\\Medina Larios}
+\title{Contador Público}
+\address{Calle Río Eufrates \#151, Praderas del Río}{CP. 79030 Ciudad Valles, S.L.P.}% OPT
+\mobile{8331203927}
 \phone{(481)3815957}
-\email{l.arios@hotmail.com}
-%\homepage{homepage (optional)}                % optional, remove the line if not wanted
-%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-\photo[64pt]{Sandy.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+\email{sandy.medina.larios@gmail.com}
+\photo[64pt][0pt]{Sandy.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 \makeatletter
@@ -51,61 +46,48 @@
 \begin{document}
 \maketitle
 
-\section{Informaci\'on Personal}
-\cvline{Fecha de Nacimiento}{22 Septiembre 1987}
-\cvline{Lugar de Nacimiento}{Ciudad Valles, San Luis Potos\'i. M\'exico}
-\cvline{Nacionalidad}{Mexicana}
-\cvline{Estado Civil}{Casada}
-\cvline{CURP}{MELS870922UI5}
+\section{Información Personal}
+\cvitem{Fecha de Nacimiento}{22 Septiembre 1987}
+\cvitem{Lugar de Nacimiento}{Ciudad Valles, San Luis Potosí. México}
+\cvitem{Nacionalidad}{Mexicana}
+\cvitem{Estado Civil}{Casada}
+\cvitem{CURP}{MELS870922UI5}
 %\cvline{RFC}{MELS870922MSPDRN02}
 %\cvline{C\'edula Profesional}{}
 
-%\section{Residencia Profesional}
-%\cvline{T\'itulo}{\emph{AdaptText: Middleware basado en perfiles para la administraci\'on, supervisi\'on y ge\-ne\-ra\-ci\'on din\'amica de contenidos de texto.}}
-%\cvline{Asesor}{Dr. Jos\'e Luis Gonz\'alez Compe\'an}
-
 \section{Experiencia Profesional}
-\cventry{2009 -- 2010}{Auxiliar Contable}{RAYEL Contadores P\'ublicos}{Cd. Valles, S.L.P.}{}{Archivado y captura de datos, atenci\'on a clientes}
-\cventry{2009}{Auxiliar Contable}{Hielo Fr\'io}{Cd. Valles, S.L.P.}{}{Archivado y captura de datos, atenci\'on a clientes, control de recurso humano}
-\cventry{2008 -- 2009}{Servicio Social}{RAYEL Contadores P\'ublicos}{Cd. Valles, S.L.P.}{}{Archivado y captura de datos, atenci\'on a clientes}
+\cventry{2013 -- Actualidad}{Supervisora de Logística}{Corporativo Alexandro Miranda y Asociados S.A. de C.V.}{Cd. Valles, SLP.}{}{Gestión de recurso humano, gestión de transporte, enlace con proveedores y atención a clientes}
+\cventry{2009 -- 2010}{Auxiliar Contable}{RAYEL Contadores Públicos}{Cd. Valles, SLP.}{}{Control de expedientes, captura de datos y atención a clientes}
+\cventry{2009}{Auxiliar Contable}{Hielo Frío}{Cd. Valles, S.L.P.}{}{Gestión de recurso humano, control de expedientes, captura de datos y atención a clientes}
+\cventry{2008 -- 2009}{Servicio Social}{RAYEL Contadores Públicos}{Cd. Valles, SLP.}{}{Control de expedientes, captura de datos y atención a clientes}
 
-\section{Formaci\'on Acad\'emica}
-\cventry{2005 -- 2009}{Licenciado en Contador P\'ublico}{Universidad Aut\'onoma de San Luis Potos\'i Campus Huasteca}{Cd. Valles, San Luis Potos\'i}{}{}
-\cventry{2002 -- 2005}{Especialidad en Inform\'atica}{Colegio de Bachilleres Plantel 06}{Cd. Valles, San Luis Potos\'i}{}{}
-\cventry{1999 -- 2002}{Certificado de secundaria}{Escuela Secundaria Gral. No. 3 Tierra y Libertad}{Cd. Valles, San Luis Potos\'i}{}{T\'ecnico en Taquimecanograf\'ia}
+\section{Formación Académica}
+\cventry{En curso}{Maestría en Administración de Empresas}{Universidad YAAN}{Cd. Valles, SLP}{}{}
+\cventry{2005 -- 2009}{Licenciado en Contador Público}{Universidad Autónoma de San Luis Potosí Campus Huasteca}{Cd. Valles, SLP}{}{}
+\cventry{2002 -- 2005}{Especialidad en Informática}{Colegio de Bachilleres Plantel 06}{Cd. Valles, SLP}{}{}
+\cventry{1999 -- 2002}{Certificado de secundaria}{Escuela Secundaria Gral. No. 3 Tierra y Libertad}{Cd. Valles, San Luis Potosí}{}{Técnico en Taquimecanografía}
 
 \pagebreak
 
-%\pagebreak
-%\section{Premios y Reconocimientos}
-%\cvline{Febrero 2010}{\textbf{3\superscript{er} lugar de aprovechamiento de la carrera de Licenciatura en Inform\'atica Gen. 2005 -- 2009}, \textit{Instituto Tecnol\'ogico de Ciudad Valles}, Cd. Valles, San Luis Potos\'i.}
-%\cvline{Septiembre 2009}{\textbf{Participaci\'on XXIV Evento Nacional de Creatividad -- Fase Regional Zona II}, \textit{Instituto Tecnol\'ogico de Piedras Negras}, Piedras Negras, Coahuila.}
-%\cvline{Junio 2009}{\textbf{2\superscript{o} lugar XXIV Evento Nacional de Creatividad -- Fase Local}, \textit{Instituto Tecnol\'ogico de Ciudad Valles}, Cd. Valles, San Luis Potos\'i.}
-
-
-\section{Conocimientos Inform\'aticos}
-\cvcomputer{Sistemas Operativos}{Windows XP, Vista, 7, Linux}{}{}
-\cvcomputer{Ofim\'atica}{Suite Inform\'atica Microsoft Office}{}{}
-\cvcomputer{Lenguajes programaci\'on}{C++}{}{}
-\cvcomputer{Bases de Datos}{Fox Pro}{}{}
-\cvcomputer{Software Contable}{ContPaq 2001}{}{}
+\section{Conocimientos Informáticos}
+\cvdoubleitem{Sistemas Operativos}{Windows}{Ofim\'atica}{Microsoft Office}
+\cvdoubleitem{Bases de Datos}{Fox Pro}{Software Contable}{ContPaq}
+\cvdoubleitem{Lenguajes de Programación}{C++}{}{}
 
 \section{Idiomas}
-\cvlanguage{Espa\~nol}{Nativo}{}
-\cvlanguage{Ingl\'es}{B\'asico}{Constancia de aprobaci\'on de 5 niveles}
+\cvitemwithcomment{Español}{Nativo}{}
+\cvitemwithcomment{Inglés}{Básico}{Constancia de aprobación de 5 niveles}
 
-\section{Formaci\'on Complementaria}
-\subsection{Tecnolog\'ias de la Informaci\'on}
-\cventry{2000 -- 2001}{Windows e Internet}{C.E.C.A.T.I. No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre el sistema operativo, sus parte y utilidades.}
-\cventry{2000 -- 2001}{Procesador de Textos y Presentaciones Electr\'onicas}{C.E.C.A.T.I. No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre Word y PowerPoint.}
-\cventry{2000 -- 2001}{Hoja de C\'alculo}{C.E.C.A.T.I. No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre Excel.}
+\section{Formación Complementaria}
+\subsection{Tecnologías de la Información}
+\cventry{2000 -- 2001}{Windows e Internet}{CECATI No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre el sistema operativo, sus parte y utilidades.}
+\cventry{2000 -- 2001}{Procesador de Textos y Presentaciones Electrónicas}{CECATI No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre Word y PowerPoint.}
+\cventry{2000 -- 2001}{Hoja de Cálculo}{CECATI No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre Excel.}
 
 \subsection{Varios}
-\cventry{2009}{Confecci\'on de Faldas, Blusas y Vestidos}{C.E.C.A.T.I. No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre corte y confecci\'on de diversas prendas para dama y ni\~na.}
+\cventry{2009}{Confección de Faldas, Blusas y Vestidos}{C.E.C.A.T.I. No. 98}{Cd. Valles, S.L.P}{}{Conocimientos sobre corte y confección de diversas prendas para dama y niña.}
 
 %\section{Referencias}
 %\cvlistitem{Dr. Jos\'e Luis Gonz\'alez Comp\'ean\\Depto. de Sistemas y Computaci\'on, Instituto Tecnol\'ogico de Ciudad Valles.\\(481)38.1.20.44, joseluig@gmail.com}
-%\cvlistitem{Dr. Pedro Luis S\'anchez Orellana\\Coordinador de la Maestr\'ia en Sistemas Computacionales, Divisi\'on de Estudios de Posgrado e Investigaci\'on, Instituto Tecnol\'ogico de Ciudad Victoria\\(834)15.3.20.00 ext. 325, pedro\_sanchez@itvictoria.edu.mx}
-%\cvlistitem{Dr. Ricardo Marcel\'in Jim\'enez\\(55)58.04.46.36 ext. 268\\Depto. de Ing. El\'ectrica, UAM-Iztapalapa\\calu@xanum.uam.mx}
 
 \end{document}
