@@ -38,3 +38,15 @@ build/config/buildinfo.properties
 ignore/
 moderncv/
 moderncv.zip
+
+# Files to ignore
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.idx
+*.lof
+*.lot
+*.synctex.gz
+Sandy/*.pdf
